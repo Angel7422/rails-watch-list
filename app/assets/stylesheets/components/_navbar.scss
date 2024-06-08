@@ -1,0 +1,21 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-brand .fa-clapperboard {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navbar-brand .fa-clapperboard:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

@@ -1,0 +1,61 @@
+.card-list {
+  background-image: url('https://source.unsplash.com/1600x900/?movie');
+  padding: 45px;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  &:not(:hover) {
+    transform: scale(1);
+  }
+}
+
+.card-list h2 {
+  font-weight: bold;
+  font-size: large;
+}
+
+.card-list a {
+  color: rgb(233, 236, 240);
+  font-weight: lighter;
+  font-size: 30px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+.card-list a:hover {
+ color: rgb(222, 227, 232);
+ opacity: 1;
+ text-decoration: none;
+}
+
+.card-movie-1 {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  border: none;
+}
+.card-movie-1:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.list-group {
+  display: flex;
+  margin-top: 80px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.list-group-item {
+  padding: 10px;
+  font-size: 16px;
+}

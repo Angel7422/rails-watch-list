@@ -1,0 +1,23 @@
+
+
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <div class="form-inputs">
+    <%= f.input :comment %>
+    <%= f.input :movie_id, as: :select, collection: Movie.all %>
+  </div>
+
+
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>
+<%# nouveau formulaire, demander au user quel film va ajouter %>
+<%# route nestée, on sait déjà de quel liste il va partir  %>
+<%# afficher le nom de tous les films dans la table film (afficher une collection avec simple form) %>
+<%# le formulaire me redirige a bookmark %>
+
+
+<!--list déroulante pour les movies -->
+<!-- un input pour le commentaire-->
+<!-- simple form autre chose (inspirer de ce qu'il y a sur les routes) aller dans le create de bookmarks-->

@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>All Movies</h1>
+  <% @movies.each do |movie| %>
+    <div class="movie">
+      <h2><%= movie.title %></h2>
+      <p><%= movie.overview %></p>
+      <p>Rating: <%= movie.rating %></p>
+      <%# Ajoute ici d'autres informations que tu souhaites afficher %>
+    </div>
+  <% end %>
+</div>

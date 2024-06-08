@@ -1,0 +1,23 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://source.unsplash.com/1600x900/?movies');">
+  <div class="container">
+    <h1><strong>Showtime</strong></h1>
+    <p>Where Every Frame Tells a Story</p>
+    <%= link_to 'Add List', new_list_path, class: 'btn btn-gradient'%>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <% @lists.each do |list| %>
+    <div class="col-md-4">
+      <div class="card-list mb-4 mt-5 shadow-sm rounded">
+        <div class="card-body">
+          <div class="d-flex justify-content-center align-items-center">
+              <h2><%= link_to list.name, list_path(list) %></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

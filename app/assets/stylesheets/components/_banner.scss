@@ -1,0 +1,54 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.banner:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.banner-new {
+  background-color: #081f3a;
+}
+
+.banner-new .form-label {
+  color: white;
+  margin: 5px;
+}
+
+
+.banner h1 {
+  margin-left: 50px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.banner p {
+  margin-left: 50px;
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.btn-gradient {
+  margin-left: 50px;
+  margin-top: 15px;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.3s ease;
+  border: 1px solid #0F60C4;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
+}
